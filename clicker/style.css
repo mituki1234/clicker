@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(0deg,lightblue,#e1e1ff);
+}
+.clicker-button {
+    font-family: Dosis;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.30);
+    border: 1px solid rgba(0,0,0,0.4);
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    font-size: 25px;
+}
+.point{
+    font-family: Dosis;
+    font-size: 20px;
+}
