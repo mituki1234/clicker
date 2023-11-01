@@ -2,7 +2,7 @@ body {
     height: 100vh;
     background: linear-gradient(0deg,lightblue,#e1e1ff);
 }
-.clicker-button {
+.clicker-button{
     font-family: Dosis;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -16,4 +16,27 @@ body {
 .point{
     font-family: Dosis;
     font-size: 20px;
+}
+.leverup{
+    font-family: Dosis;
+    width: 65px;
+    height: 65px;
+}
+
+#leverup_button{
+    width: 200px;
+    height: 75px;
+    background: white;
+    text-align: left;
+}
+#leverup_button.notbuy{
+    width: 200px;
+    height: 75px;
+    background: gray;
+    text-align: left;
+}
+.needpoint{
+    text-align: right;
+    font-size: 35px;
+    font-family: Dosis;
 }

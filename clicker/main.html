@@ -11,29 +11,24 @@
 <body>
 <table>
 <tr>
+<p id="coins" class="point"></p>
+<p id="coinsPS" class="point"></p>
+</tr>
+<tr>
 <th>
 <button class="clicker-button" onclick="gainCoin();">
     click
 </button>
 </th>
 <th>
-<button class="clicker-button" onclick="getCoinsPS();">
-    click lever up!
-</button>
-</th>
-<th>
-    <img src="カーソル.jpg" alt="clicker!" class="clicker-button">
-    <button class="clicker-button" onclick="getCoinsPS();">
-        lever up!
+    <button id="levelup_button" onclick="getCoinsPS();">
+        <img src="cursor.jpg" class="levelup" width="65px" height="65px">
+        <span id="coinneeded" class="needpoint"></span>
     </button>
 </th>
 </tr>
-</tb>
 </table>
 <script src="program.js">
 </script>
-<p id="coinneeded" class="point"></p>
-<p id="coins" class="point"></p>
-<p id="coinsPS" class="point"></p>
 </body>
 </html>

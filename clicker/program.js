@@ -10,12 +10,12 @@ function gainCoin() {
 }
 
 setInterval(function renderCoins() {
-    document.getElementById("coins").innerHTML = "Coins: " + coins;
-    document.getElementById("coinneeded").innerHTML = "coins needed:" +  coinneeded;
+    document.getElementById("coins").innerHTML = coins + "円";
+    document.getElementById("coinneeded").innerHTML = coinneeded;
 })
 
 setInterval(function renderCoinsPS() {
-    document.getElementById("coinsPS").innerHTML = "Coins per second: " + coinsPS;
+    document.getElementById("coinsPS").innerHTML = "一秒間に稼ぐお金(cps): " + coinsPS;
 })
 function clickpower(){
     clickpower++;
@@ -30,5 +30,13 @@ function getCoinsPS() {
     }
 }
 setInterval(function coinPS() {
-    coins += coinsPS;
-}, 1000)
+    coins += coinsPS / 100;
+}, 10)
+setInterval(function levelbutton(){
+        target = document.getElementById("levelup_button");
+        if (coins >= coinneeded) {
+          target.className = "buy";
+        } else {
+          target.className = "";
+        }
+} ,10)
